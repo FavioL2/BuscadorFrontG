@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registro</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+		<link rel="icon" href="img/favicon.png">
+	</head>
+	<body>
+		<section class="hero is-warning is-fullheight" style="background-color: rgba(240, 126, 3, 0.8);">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<div class="column is-4 is-offset-4">
+						<h3 class="title has-text-black">Registrarse</h3>
+						<hr class="login-hr">
+						<div class="box">
+							<figure class="avatar is-inline-block">
+								<img src="./img/perfil.png" class="image is-128x128">
+							</figure>
+							<form id="CuadroRegistro">
+								<div class="field">
+									<div class="is-hidden" id="error">
+										<div class="control">
+											<p class="help is-danger">El correo ingresado ya ha sido registrado</p>
+										</div>
+									</div>
+									<div class="control">
+										<input class="input is-large" for="fname" placeholder="Nombre" autofocus="" name="nombre" pattern="[A-Za-z\s]{3,30}" title="A-z" >
+									</div>
+								</div>
+								<div class="field">
+									<div class="control">
+										<input class="input is-large" type="lname" placeholder="Apellido" name="apellido" pattern="[A-Za-z\s]{3,50}" title="A-z" >
+									</div>
+								</div>								
+								<div class="field">
+									<div class="control">
+										<input class="input is-large" type="email" placeholder="Email" name="email">
+									</div>
+								</div>
+								<div class="field">
+									<div class="control">
+										<input class="input is-large" type="password" placeholder="Password" name="password">
+									</div>
+								</div>
+								<button class="button is-block is-info is-large is-fullwidth">Registrarse  <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+							</form>
+						</div>
+						<p class="has-text-grey">
+							<a href="./inicio.html">Iniciar Sesión</a> &nbsp;·&nbsp;
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="./script/registroUsuario.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+	</body>
+</html>

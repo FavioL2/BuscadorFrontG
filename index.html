@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/5e37b371e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>221b</title>
+</head>
+<body>    
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: rgba(240, 126, 3, 0.8);">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./index.html">
+            <img src="./img/buscanding.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" id="burger"aria-label="menu" aria-expanded="false" data-target="navReg">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navReg" class="navbar-menu">
+          <div class="navbar-start">      
+            <a class="navbar-item" id="deseadoLink" href="./lista-deaseados.html">
+              Lista de Deseados
+            </a> 
+            <a class="navbar-item" id="perfilLink" href="./perfil.html">
+                Perfil
+              </a>             
+          </div>
+      
+          <div class="nav-right nav-menu">
+            <div class="navbar-item" id="navUsuario">
+              <div class="buttons" id="inicio-registro">
+                <a class="button is-primary is-light tx-orange" href="./inicio.html">
+                  <strong>Iniciar Sesión</strong>
+                </a>
+                <a class="button is-link is-light tx-orange" href="./registro.html">
+                  Registrarse
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-right nav-menu">
+            <div class="navbar-item is-hidden" id="navCerrar">
+              <div class="buttons" id="cerrar">                
+                <a class="button is-danger is-light" href="./index.html">
+                  Cerrar Sesión
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="buscar" id="contenido">
+        <form id="formbusqueda" autocomplete="off">
+            <input  
+                class="buscador"
+                type="text" 
+                id="textoBuscador" 
+                placeholder="Buscar..."
+                name="textoBuscador"
+            >
+        </form>
+    </div>
+
+    <section class="section is-centered no-display" id="resultados">
+      <div class="container has-text-centered">
+        <h2 class="title">Resultados: </h2>
+        <div class="columns is-multiline is-centered" id="productos">
+        </div>
+      </div>
+    </section>
+
+
+    <script src="script/buscador.js"></script>
+    <script async type="text/javascript" src="./script/bulma.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

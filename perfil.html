@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/5e37b371e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>Buscador</title>    
+</head>
+<body>    
+    <nav class="navbar is-warning" role="navigation" aria-label="main navigation" style="background-color: rgba(240, 126, 3, 0.8);">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./index.html">
+            <img src="./img/buscanding.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navReg">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navReg" class="navbar-menu">
+          <div class="navbar-start">      
+            <a class="navbar-item" id="deseadoLink" href="./lista-deaseados.html">
+              Lista de Deseados
+            </a>
+            <a class="navbar-item" id="deseadoLink" href="./perfil.html">
+              Perfil
+            </a>             
+          </div>
+      
+          <div class="nav-right nav-menu">
+            <div class="navbar-item" id="navUsuario">
+              <div class="buttons" id="inicio-registro">
+                <button class="button is-primary is-light" href="./inicio.html">
+                  <strong>Iniciar Sesión</strong>
+                </button>
+                <button class="button is-link is-light" href="./registro.html">
+                  Registrarse
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="nav-right nav-menu">
+            <div class="navbar-item is-hidden" id="navCerrar">
+              <div class="buttons" id="cerrar">                
+                <a class="button is-danger is-light" href="./index.html">
+                  Cerrar Sesión
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-6">
+        <section class="section is-primary" style="background-color: hsl(0, 0%, 96%)">
+            <h1 class="title" id="nombreUsuario"></h1>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <strong>Nombre : </strong>
+                </div>
+                <div class="column is-three-quarters" id="campoNombre">
+                    <h5 class="subtitle is-6" id="campoNombre"></h5>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <strong>Apellido : </strong>
+                </div>
+                    <div class="column is-three-quarters" > 
+                        <h5 class="subtitle is-6" id="campoApellido"></h5>
+                    </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <strong>Correo : </strong>
+                </div>
+                <div class="column is-three-quarters">
+                    <h5 class="subtitle is-6" id="campoCorreo"></h5>
+                </div>
+            </div>
+          </section>
+      </div>
+      <script src="./script/bulma.js"></script>
+      <script src="./script/perfil.js"></script>
+</body>
