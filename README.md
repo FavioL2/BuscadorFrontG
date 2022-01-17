@@ -5,3 +5,4 @@ Este proyecto consiste en un buscador que obtiene datos de diferentes tiendas pa
 
 # Codigo
 Front-End de proyecto Buscador, realizado con Javascript Vanilla y html.
+Usamos fetch para las conexiones y se manejaron los JWT en el header.
